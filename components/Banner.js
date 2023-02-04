@@ -12,7 +12,7 @@ export default function Banner({title, src, linkText, closeIcon}) {
             <Link href={src} className="ml-2 underline underline-offset-2 text-white hover:text-logo-light hover:underline-logo-light">
                 {linkText}
             </Link>
-            { closeIcon ? 
+            { closeIcon === true ? 
             <div className="absolute top-0 right-10 h-full w-8 flex items-center" >
                 <div className="w-8 h-8" onClick={closeBanner}>
                     <i className="fa-light fa-xmark h-8 w-8 hover:cursor-pointer  opacity-60 hover:opacity-100" title="Close Banner" ></i>
