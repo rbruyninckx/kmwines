@@ -21,13 +21,13 @@ button {
 button.reverse {
     @apply text-white bg-alchemy hover:bg-rose-800;
 }
-.card { @apply border border-black/20 bg-white hover:bg-logo-lightest  hover:border-alchemy shadow-md;}
+.card { @apply border border-black/20 bg-white hover:bg-logo-lightest  hover:border-alchemy shadow-md focus:bg-logo-lightest focus:border-alchemy;}
 
 .card img { @apply rounded-t-md scale-100 transition-all;}
 
-.card:hover img { @apply  rounded-t-md scale-125 transition-all; }
-.card:hover h4 { @apply font-bold;}
-.card:hover button { }
+.card:hover img, .card:focus img { @apply  rounded-t-md scale-125 transition-all; }
+.card:hover h4, .card:focus h4 { @apply font-bold;}
+
 
 
 .nav-links > a {

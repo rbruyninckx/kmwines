@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Script from 'next/script'
 import Banner from '../components/Banner'
+import { useEffect } from 'react'
 import { Libre_Baskerville } from '@next/font/google'
 import  logo from "../public/images/k_and_m_logo.png"
 
@@ -27,6 +28,23 @@ export default function Home() {
     }, 2000);
   }
 
+  useEffect(() => {
+    function resizeValley() {
+      const footer = document.querySelector("footer");
+      const valley = document.querySelector("#valley");
+      const footerHeight = footer.offsetHeight;
+      console.log("footerheight", footerHeight)
+      valley.style.bottom = footerHeight + "px";
+    }
+
+    window.addEventListener("resize", resizeValley);
+
+    resizeValley();
+
+    return () => window.removeEventListener("resize", resizeValley);
+    
+  }, [])
+
   return (
     <>
       <Head>
@@ -41,16 +59,16 @@ export default function Home() {
           <h2 className="text-white text-2xl lg:text-3xl underline decoration-alchemy decoration-4 underline-offset-4 mt-2">Oregon Pinot Noir and Chardonnay from the Willamette Valley</h2>
         </div>
       </div>
-      <div className="h-[574px] absolute w-full z-0 max-lg:bottom-[90vh] lg:bottom-[40vh] left-0 bg-[#F0AA00]">
-        <div className="h-[100px] w-full bg-gradient-to-b from-white absolute top-0"> </div>
-        <div className="h-[100px] w-full bg-gradient-to-t from-[#F0AA00] absolute bottom-0"></div>
+      <div className="h-[574px] absolute w-full z-0 bottom-0 left-0 bg-[#F0AA00] max-lg:max-h-[20vh]" id="valley">
+        <div className="h-[50px] lg:h-[100px] w-full bg-gradient-to-b from-white absolute top-0"> </div>
+        <div className="h-[50px] lg:h-[100px] w-full bg-gradient-to-t from-[#F0AA00] absolute bottom-0"></div>
         <Image src="/images/willamette-valley-1.jpg" alt="Willamette Valley" width={1920} height={574} className="object-cover w-full z-0 "/>
         
       </div>
       <div className="min-h-screen flex flex-col z-30">
       <section className="flex-1 z-30">
         
-        <header className={libre.className + ` fixed w-screen z-50`}>
+        <header className={libre.className + ` fixed w-screen z-[100]`}>
           
           <Banner title="Alchemy Cuvee Case Sale &mdash; Save 20%!" src="/" linkText="Click Here for More Details" closeIcon="false"/>
           <div className="px-4 py-2 w-screen flex flex-row bg-white border-b-8 border-b-alchemy">
@@ -67,7 +85,7 @@ export default function Home() {
                 <i className="fa-solid fa-cart-shopping mx-8 text-2xl h-[24px]"></i>
               </div>
               <div className="flex flex-row w-full h-full text-alchemy items-center justify-end lg:hidden">
-                <div className="w-8 h-8 mx-8">
+                <div className="w-8 h-8 mx-5">
                   <i className="fa-solid fa-bars h-[24px] text-2xl "></i>
                 </div>
                 
@@ -75,7 +93,7 @@ export default function Home() {
             </nav>
           </div>
         </header>
-        <main className={libre.className + ` mt-[60vh] min-h-[40vh] `}>
+        <main className={libre.className + ` mt-[60vh] min-h-[40vh] z-30 relative`}>
           <div className="w-full bg-white">
             <div className="w-full lg:w-3/4 mx-auto p-10">
               <div className="w-full lg:bg-[url('/images/wine-ring.jpg')] bg-no-repeat bg-[bottom_0px_right_310px]  flex flex-col lg:flex-row items-center">
@@ -87,7 +105,7 @@ export default function Home() {
                   <p className="text-xl">Ken & Mauro</p>
                 </div>
                 <div className="px-6">
-                  <Image src="/images/ken-mauro.jpg" width={400} height={400} alt="Ken & Mauro, Proprietors" className="object-contain rotate-3 p-4 border border-gray-200 bg-white shadow-md mt-4 lg:-mt-32"/>
+                  <Image src="/images/ken-mauro.jpg" width={400} height={400} alt="Ken & Mauro, Proprietors" className="object-contain lg:rotate-3 p-4 border border-gray-200 bg-white shadow-md mt-8 lg:-mt-32"/>
                 </div>
               </div>
             </div>
@@ -106,7 +124,7 @@ export default function Home() {
                 </div>
                 <div className="flex-1 p-4">
                   <h4 className="text-center text-2xl text-alchemy text-bold mb-4">12 Days of Feasting</h4>
-                  <p className="text-justify">A mix of 12 wines to brighten your Fall and Holiday. An amazing mix:. 1 pink; 1 Sparkling; 1 White; 2 Pinot noir; 4 Big Reds and 3 Big Red Blends</p>
+                  <p className="text-center">A mix of 12 wines to brighten your Fall and Holiday. An amazing mix:. 1 pink; 1 Sparkling; 1 White; 2 Pinot noir; 4 Big Reds and 3 Big Red Blends.</p>
 
                 </div>
                 <div className="p-3 text-center">
@@ -127,7 +145,7 @@ export default function Home() {
                 </div>
                 <div className="flex-1 p-4">
                   <h4 className="text-center text-2xl text-alchemy text-bold mb-4">Deep Smoky Reds</h4>
-                  <p className="text-justify">Deep Smoky Reds - a mixed case, half case, or a 3 pack gift box of our three big bold reds: Grenache, Cabernet Franc and Syrah</p>
+                  <p className="text-center">Deep Smoky Reds - a mixed case, half case, or a 3 pack gift box of our three big bold reds: Grenache, Cabernet Franc and Syrah.</p>
 
                 </div>
                 <div className="p-3 text-center">
@@ -148,7 +166,7 @@ export default function Home() {
                 </div>
                 <div className="flex-1 p-4">
                   <h4 className="text-center text-2xl text-alchemy text-bold mb-4">Trio of Pinot Noir</h4>
-                  <p className="text-justify">Trio of Pinot noir - a mixed case, half case, or a 3 pack gift box of our three of our favorite Pinot noir: Alchemy Cuvee, Beacon Hill Vineyard; Alchemy Reserve</p>
+                  <p className="text-center">Trio of Pinot noir - a mixed case, half case, or a 3 pack gift box of our three of our favorite Pinot noir: Alchemy Cuvee, Beacon Hill Vineyard; Alchemy Reserve.</p>
 
                 </div>
                 <div className="p-3 text-center">
@@ -175,23 +193,23 @@ export default function Home() {
           
         </main>
       </section>
-      <footer className={libre.className + ` bg-[#F0AA00] z-30`}>
+      <footer className={libre.className + ` bg-[#F0AA00] `}>
         <div className="flex w-full lg:w-3/4 flex-col lg:flex-row mx-auto p-10 pb-0">
-          <div className="lg:mr-10 max-lg:mb-6">
+          <div className="lg:mr-10 max-lg:mb-6 max-lg:text-center">
             <h5 className="text-xl font-bold text-black mb-4">Visit Us</h5>
             <p className="font-bold">128 West Main Street<br/>Carlton, Oregon 97111</p>
             <p>Call Us: <span className="font-bold">503-625-3236</span></p>
             <p><Link href="/">Click Here for Latest Hours & Directions</Link></p>
-            <div className="text-2xl flex flex-row mt-6">
-              <div className="w-6 h-6 mr-4 inline"><i class="fa-brands fa-facebook mr-4 w-6 h-6 cursor-pointer"></i></div>
-              <div className="w-6 h-6 mr-4 inline"><i class="fa-brands fa-twitter mr-4 w-6 h-6 cursor-pointer"></i></div>
-              <div className="w-6 h-6 mr-4 inline"><i class="fa-brands fa-instagram mr-4 w-6 h-6 cursor-pointer"></i></div>
-              <div className="w-6 h-6  inline"><i class="fa-brands fa-tiktok mr-4 w-6 h-6  cursor-pointer"></i></div>
+            <div className="text-2xl flex flex-row mt-6  max-lg:justify-center max-lg:mb-4">
+              <div className="w-6 h-6 mr-4 inline"><i className="fa-brands fa-facebook mr-4 w-6 h-6 cursor-pointer"></i></div>
+              <div className="w-6 h-6 mr-4 inline"><i className="fa-brands fa-twitter mr-4 w-6 h-6 cursor-pointer"></i></div>
+              <div className="w-6 h-6 mr-4 inline"><i className="fa-brands fa-instagram mr-4 w-6 h-6 cursor-pointer"></i></div>
+              <div className="w-6 h-6  inline"><i className="fa-brands fa-tiktok mr-4 w-6 h-6  cursor-pointer"></i></div>
 
             </div>
           </div>
           <div className="flex-1 grid max-lg:grid-rows-3 lg:grid-cols-3 gap-4">
-            <div className="max-lg:mb-6">
+            <div className="max-lg:mb-6  max-lg:text-center">
               <h5 className="text-xl font-bold text-black mb-4">Our Wine</h5>
               <p>
                 
@@ -204,7 +222,7 @@ export default function Home() {
                 <Link href="/">Shop</Link>
               </p>
             </div>
-            <div className="max-lg:mb-6">
+            <div className="max-lg:mb-6  max-lg:text-center">
               <h5 className="text-xl font-bold text-black mb-4">About K & M</h5>
               <p>
                 

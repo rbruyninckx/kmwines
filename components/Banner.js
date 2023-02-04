@@ -7,8 +7,8 @@ export default function Banner({title, src, linkText, closeIcon}) {
         banner.classList.add("hidden");
     }
     return(
-        <div className="bg-logo w-full text-center text-xl text-white px-10 py-4 relative banner">
-            {title}
+        <div className="bg-logo w-full text-center lg:text-xl text-white px-10 py-4 relative banner">
+            {title}<br className="lg:hidden"/>
             <Link href={src} className="ml-2 underline underline-offset-2 text-white hover:text-logo-light hover:underline-logo-light">
                 {linkText}
             </Link>
