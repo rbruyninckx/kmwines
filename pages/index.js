@@ -70,7 +70,7 @@ export default function Home() {
         
         <header className={libre.className + ` fixed w-screen z-[100]`}>
           
-          <Banner title="Alchemy Cuvee Case Sale &mdash; Save 20%!" src="/" linkText="Click Here for More Details" closeIcon="false"/>
+          <Banner title="Alchemy Cuvee Case Sale &mdash; Save 20%!" src="/" linkText="Click Here for More Details" closeIcon="true"/>
           <div className="px-4 py-2 w-screen flex flex-row bg-white border-b-8 border-b-alchemy">
             <nav className="mt-3"><Image src={logo} height={60} width={160} priority alt="K & M Wines" className="ml-4"/></nav>
             <nav className="flex-1">
