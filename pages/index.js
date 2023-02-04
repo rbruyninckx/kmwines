@@ -36,12 +36,12 @@ export default function Home() {
       </Head>
       <div className="h-screen absolute w-full z-10 top-0 left-0">
         <Image src="/images/tasting-room.jpg" alt="Tasting room" width={800} height={600} className="object-cover h-screen w-full z-0 opacity-85"/>
-        <div className={libre.className + ` absolute top-[20vh] lg:top-[30vh] w-full text-center z-20`}>
+        <div className={libre.className + ` absolute top-[25vh] lg:top-[30vh] w-full text-center z-20`}>
           <h1 className="text-logo text-4xl md:text-5xl mb-6 leading-normal"><span className="bg-white px-3 py-1 lg:pr-0">Welcome to</span><br className="lg:hidden"/><span className="bg-white px-3 py-1 ">K & M Wines</span></h1>
-          <h2 className="text-white text-3xl underline decoration-alchemy decoration-4 underline-offset-4 mt-2">Oregon Pinot Noir and Chardonnay from the Willamette Valley</h2>
+          <h2 className="text-white text-2xl lg:text-3xl underline decoration-alchemy decoration-4 underline-offset-4 mt-2">Oregon Pinot Noir and Chardonnay from the Willamette Valley</h2>
         </div>
       </div>
-      <div className="h-[574px] absolute w-full z-0 bottom-[40vh] left-0 bg-[#F0AA00]">
+      <div className="h-[574px] absolute w-full z-0 max-lg:bottom-[90vh] lg:bottom-[40vh] left-0 bg-[#F0AA00]">
         <div className="h-[100px] w-full bg-gradient-to-b from-white absolute top-0"> </div>
         <div className="h-[100px] w-full bg-gradient-to-t from-[#F0AA00] absolute bottom-0"></div>
         <Image src="/images/willamette-valley-1.jpg" alt="Willamette Valley" width={1920} height={574} className="object-cover w-full z-0 "/>
@@ -92,7 +92,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full bg-gradient-to-b from-white mb-[25vh]">
+          <div className="w-full bg-gradient-to-b from-white max-lg:mb-[15vh] lg:mb-[25vh]">
             
             <div className=" lg:w-3/4 mx-auto p-10 ">
 
@@ -177,7 +177,7 @@ export default function Home() {
       </section>
       <footer className={libre.className + ` bg-[#F0AA00] z-30`}>
         <div className="flex w-full lg:w-3/4 flex-col lg:flex-row mx-auto p-10 pb-0">
-          <div className="lg:mr-10">
+          <div className="lg:mr-10 max-lg:mb-6">
             <h5 className="text-xl font-bold text-black mb-4">Visit Us</h5>
             <p className="font-bold">128 West Main Street<br/>Carlton, Oregon 97111</p>
             <p>Call Us: <span className="font-bold">503-625-3236</span></p>
@@ -191,7 +191,7 @@ export default function Home() {
             </div>
           </div>
           <div className="flex-1 grid max-lg:grid-rows-3 lg:grid-cols-3 gap-4">
-            <div>
+            <div className="max-lg:mb-6">
               <h5 className="text-xl font-bold text-black mb-4">Our Wine</h5>
               <p>
                 
@@ -204,8 +204,8 @@ export default function Home() {
                 <Link href="/">Shop</Link>
               </p>
             </div>
-            <div>
-              <h5 className="text-xl font-bold text-black mb-4">About Us</h5>
+            <div className="max-lg:mb-6">
+              <h5 className="text-xl font-bold text-black mb-4">About K & M</h5>
               <p>
                 
                 <Link href="/">Ken & Mauro</Link><br/>
