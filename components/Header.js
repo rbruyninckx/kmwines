@@ -16,7 +16,7 @@ export default function Header() {
               <div className="flex flex-row w-full h-full text-alchemy items-center justify-end nav-links max-lg:hidden">
                 <Link href="/" className="mx-8 text-2xl">Visit Us</Link>
                 <Link href="/" className="mx-8 text-2xl">Events</Link>
-                <Link href="/" className="mx-8 text-2xl">Alchemy Vineyard</Link>
+                <Link href="/" className="mx-8 text-2xl hidden">Alchemy Vineyard</Link>
                 <Link href="/" className="mx-8 text-2xl">Our Story</Link>
                 <Link href="/" className="mx-8 text-2xl">Wine Club</Link>
                 <Link href="/" className="mx-8 text-2xl">Buy Wine</Link>
@@ -24,9 +24,11 @@ export default function Header() {
                 <i className="fa-solid fa-cart-shopping mx-8 text-2xl h-[24px]"></i>
               </div>
               <div className="flex flex-row w-full h-full text-alchemy items-center justify-end lg:hidden">
-                <div className="w-8 h-8 mx-5">
-                  <i className="fa-solid fa-bars h-[24px] text-2xl "></i>
-                </div>
+                
+                    <i className="fa-solid fa-user mx-5 text-2xl h-[24px]"></i>
+                    <i className="fa-solid fa-cart-shopping mx-5 text-2xl h-[24px]"></i>
+                  <i className="fa-solid fa-bars h-[24px] mx-5 text-2xl "></i>
+                
                 
               </div>
             </nav>

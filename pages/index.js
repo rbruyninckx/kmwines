@@ -52,7 +52,7 @@ export default function Home() {
         
         <main className={libre.className + ` mt-[98vh] lg:mt-[60vh] min-h-[40vh] z-30 relative`}>
           <div className="w-full bg-white">
-            <div className="w-full lg:w-3/4 mx-auto p-6">
+            <div className="w-full lg:w-3/4 mx-auto px-6 py-12 ">
               <div className="w-full lg:bg-[url('/images/wine-ring.jpg')] bg-no-repeat bg-[bottom_0px_right_310px]  flex flex-col lg:flex-row items-center">
                 <div className="flex-1 ">
                   <h3 className="text-3xl text-alchemy mb-6 font-bold">We would love to share our wines with you!</h3>
@@ -82,8 +82,8 @@ export default function Home() {
             <div className=" lg:w-3/4 mx-auto p-6 ">
 
             <div className="c7-product-collection hidden" data-collection-slug="featured"></div>
-            <h2 className="text-4xl mb-6  text-alchemy text-center">Top Sellers</h2>
-
+            <h3 className="text-3xl   text-logo text-center">~ Today&rsquo;s Featured Wines ~</h3>
+            <p className="text-lg mb-6 text-center"><Link href="/" className="underline">Shop All Wines</Link></p>
             <div className="grid grid-flow-row gap-5 max-lg:grid-rows-3 lg:grid-cols-3">
               <div className="rounded-md border border-gray-100 flex flex-col card">
                 <div className="w-full h-[200px] overflow-hidden">
