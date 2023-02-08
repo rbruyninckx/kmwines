@@ -61,3 +61,8 @@ button.reverse {
     main a, footer a {
         @apply hover:underline hover:underline-offset-2 text-alchemy font-bold ;
     }
+
+
+    .container {
+      @apply w-full md:w-3/4 mx-auto p-6 lg:p-0 ;
+    }
