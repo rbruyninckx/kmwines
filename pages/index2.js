@@ -23,7 +23,7 @@ export default function HomeTwo() {
         //do validation
         const message = document.querySelector("#signup_message");
         
-        message.innerHTML = "Please check your email inbox for a special offer!";
+        message.innerHTML = "Thanks for signing up!";
         //message.classList.add("visible");
         message.classList.remove("hidden");
         document.forms[0].reset();
@@ -89,12 +89,12 @@ export default function HomeTwo() {
                     <Products/>
                 </div>
             </section>
-            <section className="bg-logo-lightest block">
+            <section className="bg-logo-lightest block border-b border-gray-300">
                 <div className="my-8 container">
                     <form onSubmit={formSubmit}>
                     <div className="w-full flex flex-col md:flex-row items-top">
                         <div className="flex-1">
-                            <h4 className={libre.className + ` text-2xl text-center md:text-left mb-6 md:mb-0 md:mt-4`}>Sign up for exclusive promos and content from K & M Wines!</h4>
+                            <h4 className={libre.className + ` text-2xl text-center md:text-left mb-6 md:mb-0 md:mt-4`}>Sign up for exclusive promos and content from <br className="lg:hidden"/>K & M Wines!</h4>
                         </div>
                         <div className="max-md:w-full lg:w-[40%]">
                             <div className="grid auto-rows-max grid-cols-1 md:grid-cols-2 gap-6 items-center w-full mb-0">

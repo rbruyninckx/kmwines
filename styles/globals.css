@@ -76,3 +76,10 @@ button.reverse {
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+
+    #form_message {
+      @apply transition ease-out duration-300;
+    }
+    #form_message.hidden {
+      @apply transition ease-out duration-300;
+    }

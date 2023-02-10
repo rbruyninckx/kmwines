@@ -9,13 +9,13 @@ export default function FooterMenu() {
    
 
     return(
-        <footer className="bg-slate-200">
+        <footer className="bg-gradient-to-t from-sky-100 to-gray-100">
             <div className="container !p-0">
                 <div className=" grid grid-rows-4 grid-cols-1 lg:grid-rows-1 lg:grid-cols-4 gap-10 items-start pt-0 py-8 lg:py-8">
                     <div className="text-center lg:text-left">
                         <div className="lg:p-4 bg-white lg:border lg:border-gray-200 lg:shadow-md lg:w-auto w-full lg:mx-0 inline-block">
                             <Link href="/">
-                                <Image src="/images/map-bw.jpg" alt="" width={300} height={300} className="border border-gray-200 w-full h-[250px] object-cover"/>
+                                <Image src="/images/map-bw.jpg" alt="" width={300} height={300} className="border border-gray-200 w-full h-[300px] lg:h-full object-cover"/>
                             </Link>
                         </div>
                         
@@ -64,7 +64,7 @@ export default function FooterMenu() {
                     </div>
                     
                 </div>
-                <div className="italic text-sm text-center col-start-2 col-span-3 py-4 mx-4 lg:mx-0 border-t border-gray-300 text-slate-700">&copy; 2023 K & M Wines. All Rights Reserved. <br className="lg:hidden"/>Must be 21 years or older to purchase and consume alcohol. </div>
+                <div className="italic text-sm text-center col-start-2 col-span-3 py-4 mx-4 lg:mx-0 border-t border-slate-300 text-slate-700">&copy; 2023 K & M Wines. All Rights Reserved. <br className="lg:hidden"/>Must be 21 years or older to purchase and consume alcohol. </div>
             </div>
 
 
