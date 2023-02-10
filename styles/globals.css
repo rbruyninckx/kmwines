@@ -66,3 +66,13 @@ button.reverse {
     .container {
       @apply w-full md:w-3/4 mx-auto p-6 lg:p-0 ;
     }
+
+    .hide-scrollbar::-webkit-scrollbar{
+      display: none;
+      width: 0 !important;
+    }
+
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
