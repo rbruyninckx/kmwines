@@ -22,7 +22,7 @@ export default function Products() {
                 return(
                 
                     <div className="flex flex-col w-full items-center p-4 rounded-md border border-gray-200 hover:border-gray-400 hover:bg-gray-100" key={product.name}>
-                        <div className="px-20 sm:px-6">
+                        <div className="px-20 sm:px-6 lg:px-20">
                             <Image src={`/images/` + product.src} width={400} height={400} className="object-fill" alt={product.name}/>
                         </div>
                         <div className="text-center mt-4 flex-1">

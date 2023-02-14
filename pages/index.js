@@ -73,26 +73,26 @@ export default function HomeTwo() {
                 </div>
             </section>
             <section className="bg-alchemy block">
-                <div className="container my-8 text-center md:px-0">
-                    <h2 className={libre.className + ` text-4xl lg:text-5xl text-white  tracking-wider max-lg:px-6`}>Visit Us Today</h2>
-                    <p className="text-white text-lg my-4 tracking-wide max-lg:px-6">Our Tasting Room is located in the heart of Carlton, Oregon, on Main Street. Visit us to taste great wine and shop local artisanal goods at Milltown Mercantile.</p>
+                <div className="container my-8 text-center !px-0">
+                    <h2 className={libre.className + ` text-4xl lg:text-5xl text-white  tracking-wider max-lg:px-4`}>Visit Us Today</h2>
+                    <p className="text-white text-lg my-4 tracking-wide max-lg:px-4">Our Tasting Room is located in the heart of Carlton, Oregon, on Main Street. Visit us to taste great wine and shop local artisanal goods at Milltown Mercantile.</p>
                     <div className=" overflow-x-auto snap-mandatory snap-x mx-auto  hide-scrollbar">
                     <div className="grid gap-8 w-max sm:w-full grid-rows-1 grid-cols-4 sm:grid-rows-2 sm:grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 my-6 mx-40 sm:mx-0">
-                        <div className="border border-gray-200 p-2 xl:p-4 bg-white max-sm:w-[300px] max-sm:h-[300px] snap-center">
+                        <div className="border border-gray-200 p-2 xl:p-3 bg-white max-sm:w-[300px] max-sm:h-[300px] snap-center">
                             <Image src="/images/tasting-room-guests.jpg" width={400} height={400} className="w-full h-full object-cover shadow-md" alt="Wine"/>
                         </div>
-                        <div className="border border-gray-200 p-2 xl:p-4 bg-white  max-sm:w-[300px] max-sm:h-[300px] snap-center">
+                        <div className="border border-gray-200 p-2 xl:p-3 bg-white  max-sm:w-[300px] max-sm:h-[300px] snap-center">
                             <Image src="/images/wine-2.jpg" width={400} height={400} className="w-full h-full object-cover shadow-md" alt="More wine"/>
                         </div>
-                        <div className="border border-gray-200 p-2 xl:p-4 bg-white  max-sm:w-[300px] max-sm:h-[300px] snap-center">
+                        <div className="border border-gray-200 p-2 xl:p-3 bg-white  max-sm:w-[300px] max-sm:h-[300px] snap-center">
                             <Image src="/images/ken.jpg" width={400} height={400} className="w-full h-full object-cover shadow-md" alt="Lots more wine"/>
                         </div>
-                        <div className="border border-gray-200 p-2 xl:p-4 bg-white  max-sm:w-[300px] max-sm:h-[300px] snap-center">
+                        <div className="border border-gray-200 p-2 xl:p-3 bg-white  max-sm:w-[300px] max-sm:h-[300px] snap-center">
                             <Image src="/images/wine-3.jpg" width={400} height={400} className="w-full h-full object-cover shadow-md" alt="Lotsa more wine"/>
                         </div>
                     </div>
                     </div>
-                    <p className="text-white max-lg:px-6">
+                    <p className="text-white max-lg:px-4">
                         <button className="bg-white text-alchemy px-6 py-4 rounded-md hover:bg-logo-lightest border-none mt-4 mb-0">Click Here for Hours and Directions</button>
                     </p>
                 </div>
@@ -107,19 +107,19 @@ export default function HomeTwo() {
             <section className="bg-logo-lightest block border-b border-gray-300">
                 <div className="my-8 container">
                     <form onSubmit={formSubmit}>
-                    <div className="w-full flex flex-col md:flex-row items-top">
+                    <div className="w-full flex flex-col 2xl:flex-row items-top">
                         <div className="flex-1">
-                            <h4 className={libre.className + ` text-2xl text-center md:text-left mb-6 md:mb-0 md:mt-4`}>Sign up for exclusive promos and content from <br className="lg:hidden"/>K & M Wines!</h4>
+                            <h4 className={libre.className + ` text-2xl text-center 2xl:text-left mb-6 2xl:mb-0 min-[1780px]:mt-4 xl:mr-4`}>Sign up for exclusive promos and content from <br className="sm:hidden"/>K & M Wines!</h4>
                         </div>
-                        <div className="max-md:w-full lg:w-[40%]">
-                            <div className="grid auto-rows-max grid-cols-1 md:grid-cols-2 gap-6 items-center w-full mb-0">
-                                <div className="md:min-w-[8rem]">
+                        <div className="max-2xl:w-full 2xl:w-[40%]">
+                            <div className="grid auto-rows-max grid-cols-1 lg:grid-cols-2 gap-6 items-center w-full mb-0">
+                                <div className="lg:min-w-[8rem]">
                                     <input className="w-full px-5 py-4 flex-1 rounded-md border border-gray-200 placeholder:italic m-0" type="email" placeholder="Email Address"/>
                                 </div>
                                 <div>
                                     <button className="m-0 w-full ">Subscribe</button>
                                 </div>
-                                <div id="signup_message" className="hidden md:col-span-2 self-start text-center text-green-800 font-bold">
+                                <div id="signup_message" className="hidden lg:col-span-2 self-start text-center text-green-800 font-bold">
 
                                 </div>
                             </div>
