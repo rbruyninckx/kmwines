@@ -64,10 +64,10 @@ export default function HomeTwo() {
             <section className="hero bg-[url('/images/tasting-room.jpg')] bg-cover bg-center block">
                 <div className="bg-black/30 w-full h-full">
                 <div className="container flex flex-col md:flex-row items-center align-middle  h-[60vh] ">
-                    <div className="mt-44 text-center w-full">
+                    <div className="mt-40 md:mt-44 text-center w-full">
                         <h1 className={libre.className + ` text-3xl lg:text-4xl text-white underline underline-offset-4 decoration-4 decoration-alchemy`}>We would love to share our wines with you!</h1>
-                        <button className="mt-6 mx-3">Shop Our Wine</button>
-                        <button className="bg-white text-alchemy  rounded-md hover:bg-logo-lightest border-none mx-3">Visit Our Tasting Room</button>
+                        <button className="mt-6 mx-3 max-sm:text-base">Shop Our Wine</button>
+                        <button className="bg-white text-alchemy  rounded-md hover:bg-logo-lightest border-none mx-3 max-sm:text-base">Visit Our Tasting Room</button>
                     </div>
                 </div>
                 </div>
@@ -77,7 +77,7 @@ export default function HomeTwo() {
                     <h2 className={libre.className + ` text-4xl lg:text-5xl text-white  tracking-wider max-lg:px-4`}>Visit Us Today</h2>
                     <p className="text-white text-lg my-4 tracking-wide max-lg:px-4">Our Tasting Room is located in the heart of Carlton, Oregon, on Main Street. Visit us to taste great wine and shop local artisanal goods at Milltown Mercantile.</p>
                     <div className=" overflow-x-auto snap-mandatory snap-x mx-auto  hide-scrollbar">
-                    <div className="grid gap-8 w-max sm:w-full grid-rows-1 grid-cols-4 sm:grid-rows-2 sm:grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 my-6 mx-40 sm:mx-0">
+                    <div className="grid gap-8 w-max sm:w-full grid-rows-1 grid-cols-4 sm:grid-rows-2 sm:grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 my-6 mx-40 sm:mx-0 sm:px-6 lg:px-0">
                         <div className="border border-gray-200 p-2 xl:p-3 bg-white max-sm:w-[300px] max-sm:h-[300px] snap-center">
                             <Image src="/images/tasting-room-guests.jpg" width={400} height={400} className="w-full h-full object-cover shadow-md" alt="Wine"/>
                         </div>

@@ -64,7 +64,7 @@ button.reverse {
 
 
     .container {
-      @apply w-full md:w-3/4 mx-auto p-6 lg:p-0 ;
+      @apply w-full lg:w-3/4 mx-auto p-6 lg:p-0 ;
     }
 
     .hide-scrollbar::-webkit-scrollbar{

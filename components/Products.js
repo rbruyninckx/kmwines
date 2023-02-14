@@ -17,12 +17,12 @@ export default function Products() {
     }]
 
     return(
-        <div className="w-full grid grid-cols-1 grid-rows-4 gap-6 md:grid-cols-4 md:grid-rows-1 my-12">
+        <div className="w-full grid grid-cols-1 grid-rows-4 gap-6 sm:grid-cols-2 sm:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 my-12">
             {products.map(product => {
                 return(
                 
                     <div className="flex flex-col w-full items-center p-4 rounded-md border border-gray-200 hover:border-gray-400 hover:bg-gray-100" key={product.name}>
-                        <div className="px-20 sm:px-6 lg:px-20">
+                        <div className="px-20 sm:px-6 2xl:px-20">
                             <Image src={`/images/` + product.src} width={400} height={400} className="object-fill" alt={product.name}/>
                         </div>
                         <div className="text-center mt-4 flex-1">

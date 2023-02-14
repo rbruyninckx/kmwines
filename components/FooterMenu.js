@@ -11,7 +11,7 @@ export default function FooterMenu() {
     return(
         <footer className="bg-gradient-to-t from-sky-100 to-gray-100 ">
             <div className="stripes w-full">
-            <div className="container !p-0">
+            <div className="container !p-0 ">
                 <div className=" grid grid-rows-4 grid-cols-1 lg:grid-rows-1 lg:grid-cols-4 gap-8 items-start pt-0 py-8 lg:py-8">
                     <div className="text-center lg:text-left">
                         <div className="lg:p-4 bg-white lg:border lg:border-gray-200 lg:shadow-md lg:w-auto w-full lg:mx-0 inline-block">
@@ -22,12 +22,12 @@ export default function FooterMenu() {
                         
                     </div>
 
-                    <div className="text-center lg:text-left">
+                    <div className="text-center ">
                     <h5 className={libre.className + ` text-2xl font-bold text-black mb-4`}>Visit Us</h5>
                     <p className="font-bold text-xl lg:text-lgl">128 West Main Street<br/>Carlton, Oregon 97111</p>
                     <p className="text-xl lg:text-lg">Call Us: <br className="lg:hidden"/><span className="font-bold">503-625-3236</span></p>
                     <p className="text-xl lg:text-lg"><Link href="/">Hours & Directions</Link></p>
-                    <div className="text-3xl flex flex-row mt-6  max-lg:justify-center max-lg:mb-4">
+                    <div className="text-3xl flex flex-row mt-6  justify-center max-lg:mb-4 mx-auto w-full ">
                         <div className="w-8 h-8 mr-4 inline"><i className="fa-brands fa-facebook mr-4 w-8 h-8 cursor-pointer"></i></div>
                         <div className="w-8 h-8 mr-4 inline"><i className="fa-brands fa-twitter mr-4 w-8 h-8 cursor-pointer"></i></div>
                         <div className="w-8 h-8 mr-4 inline"><i className="fa-brands fa-instagram mr-4 w-8 h-8 cursor-pointer"></i></div>
@@ -36,7 +36,7 @@ export default function FooterMenu() {
                     </div>
                     </div>
 
-                    <div className="text-center lg:text-left">
+                    <div className="text-center">
                     <h5 className={libre.className + ` text-2xl font-bold text-black mb-4`}>Our Wine</h5>
                     <p className="text-xl lg:text-lg">
                         
@@ -50,7 +50,7 @@ export default function FooterMenu() {
                     </p>
                     </div>
 
-                    <div className="text-center lg:text-left">
+                    <div className="text-center">
                     <h5 className={libre.className + ` text-2xl font-bold text-black mb-4`}>About K & M</h5>
                     <p className="text-xl lg:text-lg">
                         

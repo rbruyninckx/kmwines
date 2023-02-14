@@ -21,17 +21,17 @@ export default function Header() {
           <div className="px-4 py-2 w-screen flex flex-row bg-white border-b-8 border-b-alchemy">
             <nav className="mt-3"><Link href="/"><Image src={logo} height={60} width={160} priority alt="K & M Wines" className="ml-2 xl:ml-4 max-xl:h-[40px] max-xl:w-auto cursor-pointer"/></Link></nav>
             <nav className="flex-1">
-              <div className="flex flex-row w-full h-full text-alchemy items-center justify-end nav-links max-xl:hidden">
-                <Link href="/" className="mx-8 text-2xl">Visit Us</Link>
-                <Link href="/" className="mx-8 text-2xl">Events</Link>
-                <Link href="/" className="mx-8 text-2xl hidden">Alchemy Vineyard</Link>
-                <Link href="/" className="mx-8 text-2xl">Our Story</Link>
-                <Link href="/" className="mx-8 text-2xl">Wine Club</Link>
-                <Link href="/" className="mx-8 text-2xl">Buy Wine</Link>
-                <i className="fa-solid fa-user mx-8 text-2xl h-[24px]"></i>
-                <i className="fa-solid fa-cart-shopping mx-8 text-2xl h-[24px]"></i>
+              <div className="flex flex-row w-full h-full text-alchemy items-center justify-end nav-links max-lg:hidden">
+                <Link href="/" className="mx-5 xl:mx-8 text-lg xl:text-2xl">Visit Us</Link>
+                <Link href="/" className="mx-5 xl:mx-8 text-lg xl:text-2xl">Events</Link>
+                <Link href="/" className="mx-5 xl:mx-8 text-lg xl:text-2xl hidden">Alchemy Vineyard</Link>
+                <Link href="/" className="mx-5 xl:mx-8 text-lg xl:text-2xl">Our Story</Link>
+                <Link href="/" className="mx-5 xl:mx-8 text-lg xl:text-2xl">Wine Club</Link>
+                <Link href="/" className="mx-5 xl:mx-8 text-lg xl:text-2xl">Buy Wine</Link>
+                <i className="fa-solid fa-user mx-5 xl:mx-8 text-lg xl:text-2xl h-[24px]"></i>
+                <i className="fa-solid fa-cart-shopping mx-5 xl:mx-8 text-lg xl:text-2xl h-[24px]"></i>
               </div>
-              <div className="flex flex-row w-full h-full text-alchemy items-center justify-end xl:hidden">
+              <div className="flex flex-row w-full h-full text-alchemy items-center justify-end lg:hidden">
                 
                     <i className="fa-solid fa-user mx-5 text-2xl h-[24px] cursor-pointer"></i>
                     <i className="fa-solid fa-cart-shopping mx-5 text-2xl h-[24px] cursor-pointer"></i>
