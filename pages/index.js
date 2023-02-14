@@ -73,8 +73,8 @@ export default function HomeTwo() {
                 </div>
             </section>
             <section className="bg-alchemy block">
-                <div className="container my-8 text-center sm:px-6 md:px-0">
-                    <h2 className={libre.className + ` text-4xl lg:text-5xl text-white uppercase tracking-wider max-lg:px-6`}>Visit Us Today</h2>
+                <div className="container my-8 text-center md:px-0">
+                    <h2 className={libre.className + ` text-4xl lg:text-5xl text-white  tracking-wider max-lg:px-6`}>Visit Us Today</h2>
                     <p className="text-white text-lg my-4 tracking-wide max-lg:px-6">Our Tasting Room is located in the heart of Carlton, Oregon, on Main Street. Visit us to taste great wine and shop local artisanal goods at Milltown Mercantile.</p>
                     <div className=" overflow-x-auto snap-mandatory snap-x mx-auto  hide-scrollbar">
                     <div className="grid gap-8 w-max sm:w-full grid-rows-1 grid-cols-4 sm:grid-rows-2 sm:grid-cols-2 lg:grid-rows-1 lg:grid-cols-4 my-6 mx-40 sm:mx-0">
