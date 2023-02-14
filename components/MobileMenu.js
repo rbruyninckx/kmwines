@@ -7,10 +7,10 @@ export default function MobileMenu() {
         <>
         <div id="xsMenu" className="mobile-menu initialset divide-y divide-alchemy/50 "  data-hasopened="0">
             <div className="px-4 py-2 w-screen flex flex-row bg-white">
-                <nav className="mt-3"><Image src={logo} height={40} width={107} priority alt="K & M Wines" className="ml-2 max-xl:h-[40px] max-xl:w-auto cursor-pointer"/></nav>
+                <nav className="mt-3"><Link href="/" onClick={() => toggleMobileMenu()}><Image src={logo} height={40} width={107} priority alt="K & M Wines" className="ml-2 max-xl:h-[40px] max-xl:w-auto cursor-pointer"/></Link></nav>
                 <nav className="flex-1">
                 
-                <div className="flex flex-row w-full h-full text-alchemy items-center justify-end xl:hidden ">
+                <div className="flex flex-row w-full h-full text-alchemy items-center justify-end  ">
                     
                         <i className="fa-solid fa-user mx-5 text-2xl h-[24px] cursor-pointer"></i>
                         <i className="fa-solid fa-cart-shopping mx-5 text-2xl h-[24px] cursor-pointer"></i>
