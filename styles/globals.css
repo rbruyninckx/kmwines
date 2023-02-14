@@ -83,3 +83,56 @@ button.reverse {
     #form_message.hidden {
       @apply transition ease-out duration-300;
     }
+
+    .stripes-old {
+      background: repeating-linear-gradient(
+    -45deg,
+    #eee,
+    #eee 1px,
+    rgb(229, 231, 235) 1px,
+    rgb(229, 231, 235) 10px
+  );
+    }
+
+    .stripes-new {
+      background: repeating-linear-gradient(
+        -45deg,
+        #eee 0px,
+        #eee 1px,
+        transparent 1px,
+        transparent 10px
+      );
+    }
+
+    /*Mobile menu */
+
+.mobile-menu {
+  @apply w-full fixed top-0 h-screen  bg-white z-[220];
+  
+}
+ 
+.fly-in {
+  right:0;display:inline;
+
+    animation: menushow 500ms ease-out;
+}
+
+.fly-out {
+  right:-100vw;
+  animation: menuhide 500ms ease-in;
+}
+
+.initialset {
+  display:none;
+  right:-100vw;
+}
+
+@keyframes menushow {
+  0%   {right:-100vw;}
+  100% {right:0;}
+}
+
+@keyframes menuhide {
+  0% {right:0;}
+  100% {right:-100vw;}
+}

@@ -4,7 +4,9 @@ export default function Banner({title, src, linkText, closeIcon}) {
 
     const closeBanner = () => {
         const banner = document.querySelector(".banner");
+        const xsMenu = document.querySelector("#xsMenu");
         banner.classList.add("hidden");
+        xsMenu.style.top = "0px";
     }
     return(
         <div className="bg-logo w-full text-center text-sm lg:text-xl text-white px-10 py-4 relative banner">
